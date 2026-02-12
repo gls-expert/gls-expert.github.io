@@ -92,7 +92,7 @@
         .color-dot.active { border-color: #fff; transform: scale(1.1); }
 
         #interior-view {
-            position: absolute; inset: 0; background: url('https://images.unsplash.com/photo-1592198084033-aade902d1aae?auto=format&fit=crop&w=1500') center/cover;
+            position: absolute; inset: 0; background: url = ('https://dribbble.com/shots/5899231-Car-interior-infographic-element') center/cover;
             display: none; align-items: center; justify-content: center; z-index: 10; border-radius: 30px;
         }
         .interior-overlay { inset: 0; position: absolute; background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.8) 100%); }
