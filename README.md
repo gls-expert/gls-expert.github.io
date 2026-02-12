@@ -92,7 +92,7 @@
         .color-dot.active { border-color: #fff; transform: scale(1.1); }
 
         #interior-view {
-            position: absolute; inset: 0; background: url = 'https://dribbble.com/shots/5899231-Car-interior-infographic-element' center/cover;
+            position: absolute; inset: 0; background: url = 'https://images.unsplash.com/photo-1631451378663-25d08f83fd16?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D' center/cover;
             display: none; align-items: center; justify-content: center; z-index: 10; border-radius: 30px;
         }
         .interior-overlay { inset: 0; position: absolute; background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.8) 100%); }
@@ -241,12 +241,12 @@
 
 <script>
     const carData = [
-        { name: "LSGMAXI", series: "ORBITRON", price: 77000, range: "850 KM", speed: 280, power: 620, img: "https://gemini.google.com/share/ca3d7389ac29"},
-        { name: "GFANCY", series: "METRO", price: 45000, range: "420 KM", speed: 210, power: 310, img: "https://gemini.google.com/share/00f7b016cad7" },
-        { name: "DIOMANDLG", series: "VELOCITY", price: 125000, range: "600 KM", speed: 350, power: 1200, img: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800" },
-        { name: "GRAPE-4x4", series: "TERRAIN", price: 92000, range: "1200 KM", speed: 190, power: 800, img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800" },
-        { name: "SHADOW-X", series: "STEALTH", price: 150000, range: "750 KM", speed: 310, power: 900, img: "https://drive.google.com/file/d/15NCcGU_TFBLQRD7liA6tw_rXptAjWMjZ/view?usp=drivesdk" },
-        { name: "LocalG", series: "HEAVY", price: 195000, range: "1500 KM", speed: 160, power: 2000, img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800" },
+        { name: "LSGMAXI", series: "ORBITRON", price: 77000, range: "850 KM", speed: 280, power: 620, img: "https://images.unsplash.com/photo-1770297345804-e6af74ee764d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDExfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D"},
+        { name: "GFANCY", series: "METRO", price: 45000, range: "420 KM", speed: 210, power: 310, img: "https://images.unsplash.com/photo-1618418721668-0d1f72aa4bab?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGx1eHVyeSUyMGNhcnxlbnwwfHwwfHx8MA%3D%3D" },
+        { name: "DIOMANDLG", series: "VELOCITY", price: 125000, range: "600 KM", speed: 350, power: 1200, img: "https://images.unsplash.com/photo-1628519592419-bf288f08cef5?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8c3BvcnRzJTIwY2FyfGVufDB8fDB8fHww" },
+        { name: "GRAPE-4x4", series: "TERRAIN", price: 92000, range: "1200 KM", speed: 190, power: 800, img: "[https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800](https://images.unsplash.com/photo-1667374268462-4e6bee52fffe?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTZ8fGhpbGwlMjBzaWRlJTIwbXVkZHklMjB0cmFja3MlMjBjYXIlMjByYWNpbmd8ZW58MHx8MHx8fDA%3D)" },
+        { name: "SHADOW-X", series: "STEALTH", price: 150000, range: "750 KM", speed: 310, power: 900, img: "https://plus.unsplash.com/premium_photo-1686730540277-c7e3a5571553?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8c3BvcnRzJTIwY2FyfGVufDB8fDB8fHww" },
+        { name: "LocalG", series: "HEAVY", price: 195000, range: "1500 KM", speed: 160, power: 2000, img: "https://images.unsplash.com/photo-1769689957724-36000f35e68b?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHx0b3BpYy1mZWVkfDIyfHhIeFlUTUhMZ09jfHxlbnwwfHx8fHw%3D" },
     ];
 
     const showroomDetails = {
