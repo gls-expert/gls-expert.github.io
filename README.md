@@ -92,7 +92,7 @@
         .color-dot.active { border-color: #fff; transform: scale(1.1); }
 
         #interior-view {
-            position: absolute; inset: 0; background: url = 'https://images.unsplash.com/photo-1631451378663-25d08f83fd16?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D' center/cover;
+            position: absolute; inset: 0; background: url ('https://images.unsplash.com/photo-1631451378663-25d08f83fd16?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y2FyJTIwaW50ZXJpb3IlMjBkZXNpZ258ZW58MHx8MHx8fDA%3D') center/cover;
             display: none; align-items: center; justify-content: center; z-index: 10; border-radius: 30px;
         }
         .interior-overlay { inset: 0; position: absolute; background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.8) 100%); }
