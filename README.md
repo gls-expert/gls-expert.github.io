@@ -245,7 +245,7 @@
         { name: "GFANCY", series: "METRO", price: 45000, range: "420 KM", speed: 210, power: 310, img: "https://gemini.google.com/share/00f7b016cad7" },
         { name: "DIOMANDLG", series: "VELOCITY", price: 125000, range: "600 KM", speed: 350, power: 1200, img: "https://images.unsplash.com/photo-1618843479313-40f8afb4b4d8?auto=format&fit=crop&w=800" },
         { name: "GRAPE-4x4", series: "TERRAIN", price: 92000, range: "1200 KM", speed: 190, power: 800, img: "https://images.unsplash.com/photo-1533473359331-0135ef1b58bf?auto=format&fit=crop&w=800" },
-        { name: "SHADOW-X", series: "STEALTH", price: 150000, range: "750 KM", speed: 310, power: 900, img: "https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=800" },
+        { name: "SHADOW-X", series: "STEALTH", price: 150000, range: "750 KM", speed: 310, power: 900, img: "https://drive.google.com/file/d/15NCcGU_TFBLQRD7liA6tw_rXptAjWMjZ/view?usp=drivesdk" },
         { name: "LocalG", series: "HEAVY", price: 195000, range: "1500 KM", speed: 160, power: 2000, img: "https://images.unsplash.com/photo-1552519507-da3b142c6e3d?auto=format&fit=crop&w=800" },
     ];
 
