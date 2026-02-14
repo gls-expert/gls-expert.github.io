@@ -515,7 +515,7 @@
 const data = [
   {
     n: "LSGMAXI", r: "850 KM", s: "280 KM/H", p: "620 HP", c: "$77,000",
-    i: "https://g.co/gemini/share/ca3d7389ac29",
+    i: "https://images.unsplash.com/photo-1708019868640-864307aff6b9?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8c3VwZXIlMjBjYXIlMjBpbWFnZXN8ZW58MHx8MHx8fDA%3D",
     d: "A masterclass in executive mobility. Features active liquid-cooling for long-distance cruising. <strong>Exclusive Grapesino Features:</strong> <br>• Neural Pilot Sync – Mind-controlled navigation <br>• Vortex Energy Harvest – Atmospheric drag conversion <br>• Phantom Aura Cloak – Environmental camouflage",
     custom: [
       {name: "Neural Interface Level", opts: ["Basic", "Advanced", "Quantum Direct"]},
@@ -529,7 +529,7 @@ const data = [
   },
   {
     n: "GFANCY", r: "420 KM", s: "210 KM/H", p: "310 HP", c: "$45,000",
-    i: "https://g.co/gemini/share/00f7b016cad7",
+    i: "https://plus.unsplash.com/premium_photo-1737597230788-21c5a56d5d8a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTd8fGx1eHVyeSUyMGNhcnxlbnwwfHwwfHx8MA%3D%3D",
     d: "Ultra-maneuverable urban craft. <strong>Exclusive Grapesino Features:</strong> <br>• Holo-Display HUD – AR overlays <br>• Swarm Intelligence – Route optimization <br>• Nano-Repair Veil – Self-healing exterior",
     custom: [
       {name: "Sky-Dock Mode", opts: ["Auto", "Manual", "Swarm Assisted"]},
@@ -543,7 +543,7 @@ const data = [
   },
   {
     n: "DIOMANDLG", r: "600 KM", s: "350 KM/H", p: "1200 HP", c: "$125,000",
-    i: "https://g.co/gemini/share/269bc59f7c12",
+    i: "https://images.unsplash.com/photo-1759493464674-aadfffcd786a?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTh8fGZhc3Rlc3QlMjBtb2Rlcm4lMjB0ZWNoJTIwY2FyfGVufDB8fDB8fHww",
     d: "Pure kinetic art with graphene core. <strong>Exclusive Grapesino Features:</strong> <br>• Quantum Shield Armor <br>• Chrono-Flux Drive <br>• Echo Resonance Core",
     custom: [
       {name: "Energy Core Tuning", opts: ["Balanced", "Aggressive", "Overdrive"]},
@@ -571,7 +571,7 @@ const data = [
   },
   {
     n: "SHADOW-X", r: "750 KM", s: "310 KM/H", p: "900 HP", c: "$150,000",
-    i: "https://images.unsplash.com/photo-1617814076369-7a78d158798f?w=800",
+    i: "https://media.istockphoto.com/id/156784761/photo/car-race.jpg?s=612x612&w=0&k=20&c=bjOiWi_rsZXcODfxuNTEbGXmvYJs4dIexxyCTtBia-M=",
     d: "Vantablack stealth machine. <strong>Exclusive Grapesino Features:</strong> <br>• Stealth Cloak Mode <br>• Shadow Realm Link <br>• Null-Signature Emitters",
     custom: [
       {name: "Cloak Level", opts: ["Visual", "Thermal", "Full Spectrum"]},
@@ -585,7 +585,7 @@ const data = [
   },
   {
     n: "LocalG", r: "1500 KM", s: "160 KM/H", p: "2000 HP", c: "$19,500",
-    i: "https://images.unsplash.com/photo-1553440569-bcc63803a83d?w=800",
+    i: "https://images.unsplash.com/photo-1544896478-d5b709d413c5?w=900&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8dmludGFnZSUyMGNhcnxlbnwwfHwwfHx8MA%3D%3D",
     d: "Indestructible legend. <strong>Exclusive Grapesino Features:</strong> <br>• Bio-Fusion Engine <br>• Terra-Link Symbiosis <br>• Colossus Overload Surge",
     custom: [
       {name: "Haul Capacity", opts: ["Industrial", "Mega", "Planetary"]},
