@@ -32,7 +32,7 @@
     .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 30px; padding: 80px 0; }
     .card { background: var(--glass); border: 1px solid var(--border); border-radius: 15px; overflow: hidden; cursor: pointer; transition: 0.4s; }
     .card:hover { border-color: var(--s); transform: translateY(-10px); }
-    .card img { width: 100%; aspect-ratio: 16/10; object-fit: cover; }
+    .card img { max-width: 100%, height: auto; }
     .card-meta { padding: 25px; }
 
     /* ADVANCED CONFIGURATION LAB */
@@ -180,12 +180,12 @@
 
 <script>
 const data = [
-  { n: "LSGMAXI", c: "$77,000", i: "https://images.unsplash.com/photo-1708019868640-864307aff6b9?w=1200" ,max-width: 100%, height: auto},
-  { n: "GFANCY", c: "$45,000", i: "https://plus.unsplash.com/premium_photo-1737597230788-21c5a56d5d8a?w=1200" ,max-width: 100%, height: auto},
-  { n: "DIOMANDLG", c: "$125,000", i: "https://images.unsplash.com/photo-1759493464674-aadfffcd786a?w=1200" ,max-width: 100%, height: auto},
-  { n: "GRAPE-4x4", c: "$92,000", i: "https://images.unsplash.com/photo-1764053000942-80ec3553fa78?w=1200" ,max-width: 100%, height: auto},
-  { n: "SHADOW-X", c: "$150,000", i: "https://media.istockphoto.com/id/156784761/photo/car-race.jpg?s=1024" ,max-width: 100%, height: auto},
-  { n: "LocalG", c: "$19,500", i: "https://images.unsplash.com/photo-1544896478-d5b709d413c5?w=1200" ,max-width: 100%, height: auto}
+  { n: "LSGMAXI", c: "$77,000", i: "https://images.unsplash.com/photo-1708019868640-864307aff6b9?w=1200" },
+  { n: "GFANCY", c: "$45,000", i: "https://plus.unsplash.com/premium_photo-1737597230788-21c5a56d5d8a?w=1200" },
+  { n: "DIOMANDLG", c: "$125,000", i: "https://images.unsplash.com/photo-1759493464674-aadfffcd786a?w=1200" },
+  { n: "GRAPE-4x4", c: "$92,000", i: "https://images.unsplash.com/photo-1764053000942-80ec3553fa78?w=1200"},
+  { n: "SHADOW-X", c: "$150,000", i: "https://media.istockphoto.com/id/156784761/photo/car-race.jpg?s=1024" },
+  { n: "LocalG", c: "$19,500", i: "https://images.unsplash.com/photo-1544896478-d5b709d413c5?w=1200" }
 ];
 
 const mainGrid = document.getElementById('mainGrid');
