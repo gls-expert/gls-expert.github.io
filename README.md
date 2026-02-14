@@ -6,7 +6,7 @@
   <title>GRAPESINO | THE FINAL APEX</title>
   <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style>
+  <style> 
     :root {
       --p: #bc13fe; --s: #00f2ff; --bg: #030303;
       --glass: rgba(255, 255, 255, 0.03);
