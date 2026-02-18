@@ -1,239 +1,334 @@
 
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>GRAPESINO | THE FINAL APEX</title>
-  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;500;800&family=Orbitron:wght@400;900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-  <style> 
-    :root {
-      --p: #bc13fe; --s: #00f2ff; --bg: #030303;
-      --glass: rgba(255, 255, 255, 0.03);
-      --border: rgba(255, 255, 255, 0.1);
-      --active-glow: 0 0 20px rgba(0, 242, 255, 0.5);
-    }
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The Private Island of Grapesino | Where Luxury Lives</title>
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body { background: var(--bg); color: #fff; font-family: 'Plus Jakarta Sans', sans-serif; overflow-x: hidden; line-height: 1.6; }
-    .container, .nav-container { width: 92%; max-width: 2400px; margin: auto; }
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
 
-    /* Restoration: Navigation & Search */
-    nav { position: fixed; top: 0; width: 100%; z-index: 1000; padding: 25px 0; background: rgba(3, 3, 3, 0.95); backdrop-filter: blur(15px); border-bottom: 1px solid var(--border); }
-    .nav-container { display: flex; justify-content: space-between; align-items: center; }
-    .nav-logo { font-family: 'Orbitron'; font-weight: 900; letter-spacing: 4px; color: var(--s); font-size: 1.4rem; }
-    .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.8rem; margin-left: 2vw; text-transform: uppercase; letter-spacing: 2px; }
+<style>
 
-    header { height: 100vh; display: flex; align-items: center; justify-content: center; background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.9)), url('https://thumbs.dreamstime.com/b/vibrant-futuristic-sports-car-neon-lit-setting-smoke-adds-to-atmosphere-futuristic-sports-car-neon-nightscape-351035810.jpg') center/cover; text-align: center; }
-    .logo { font-family: 'Orbitron'; font-size: clamp(3rem, 10vw, 8rem); font-weight: 900; background: linear-gradient(to bottom, #fff, #666); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
-    .hero-search input { width: 100%; max-width: 600px; background: var(--glass); border: 1px solid var(--border); padding: 18px 30px; border-radius: 50px; color: #fff; border-bottom: 2px solid var(--s); outline: none; margin-top: 30px; font-size: 1rem; }
+/* ================= GLOBAL ================= */
 
-    /* Fleet Grid */
-    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(380px, 1fr)); gap: 30px; padding: 80px 0; }
-    .card { background: var(--glass); border: 1px solid var(--border); border-radius: 15px; overflow: hidden; cursor: pointer; transition: 0.4s; }
-    .card:hover { border-color: var(--s); transform: translateY(-10px); }
-    .card img { max-width: 100%, height: auto; }
-    .card-meta { padding: 25px; }
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  font-family:'Montserrat',sans-serif;
+  background:#0C1B2A;
+  color:#E8D8C3;
+  overflow-x:hidden;
+  line-height:1.8;
+}
 
-    /* ADVANCED CONFIGURATION LAB */
-    #portal { display: none; position: fixed; inset: 0; background: #050505; z-index: 2000; overflow-y: auto; }
-    .portal-hero { position: relative; height: 50vh; width: 100%; background-size: cover; background-position: center; display: flex; flex-direction: column; justify-content: flex-end; padding: 5% 8%; }
-    .portal-hero::before { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, #050505, transparent); }
-    
-    .sync-status { width: 300px; height: 4px; background: rgba(255,255,255,0.1); border-radius: 10px; margin-top: 20px; position: relative; overflow: hidden; }
-    .sync-bar { position: absolute; left: 0; top: 0; height: 100%; width: 0%; background: var(--s); box-shadow: 0 0 15px var(--s); transition: 0.6s; }
+h1,h2,h3{
+  font-family:'Playfair Display',serif;
+  letter-spacing:1px;
+}
 
-    .lab-content { padding: 0 8% 100px; display: grid; grid-template-columns: 1fr 350px; gap: 40px; }
-    
-    /* Config Categories */
-    .config-group { margin-bottom: 40px; }
-    .group-label { font-family: 'Orbitron'; font-size: 0.75rem; color: var(--s); letter-spacing: 3px; margin-bottom: 20px; display: block; opacity: 0.7; }
-    
-    .choice-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); gap: 15px; }
-    .choice-btn { background: #111; border: 1px solid var(--border); padding: 15px; border-radius: 10px; cursor: pointer; transition: 0.3s; color: #888; text-align: left; position: relative; overflow: hidden; }
-    .choice-btn:hover { border-color: rgba(255,255,255,0.3); color: #fff; }
-    .choice-btn.selected { border-color: var(--s); background: rgba(0,242,255,0.05); color: var(--s); box-shadow: var(--active-glow); }
-    .choice-btn.selected::after { content: "✓"; position: absolute; right: 10px; top: 10px; font-size: 0.7rem; }
+section{
+  padding:120px 10%;
+  position:relative;
+}
 
-    /* Sidebar Summary */
-    .summary-box { background: #0a0a0a; border: 1px solid var(--border); padding: 30px; border-radius: 20px; height: fit-content; position: sticky; top: 100px; }
-    .summary-box h3 { font-family: 'Orbitron'; font-size: 0.8rem; margin-bottom: 20px; letter-spacing: 2px; }
-    .price-total { font-family: 'Orbitron'; font-size: 1.8rem; color: #fff; margin-bottom: 10px; }
+.gold{color:#C6A75E}
+.center{text-align:center}
 
-    /* Restoration: Feedback & Socials */
-    .feedback-section { padding: 80px 0; background: #030303; border-top: 1px solid var(--border); }
-    .social-icons { padding: 60px 0; text-align: center; }
-    .social-icons a { color: #fff; font-size: 1.8rem; margin: 0 20px; opacity: 0.4; transition: 0.3s; }
-    .social-icons a:hover { opacity: 1; color: var(--s); transform: scale(1.2); display: inline-block; }
-  </style>
+/* ================= HERO ================= */
+
+.hero{
+  height:100vh;
+  background:
+  linear-gradient(rgba(12,27,42,.6),rgba(12,27,42,.85)),
+  url('https://images.unsplash.com/photo-1507525428034-b723cf961d3e') center/cover no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+.hero h1{
+  font-size:70px;
+  margin-bottom:20px;
+}
+
+.hero p{
+  font-size:22px;
+  font-weight:300;
+}
+
+.btn{
+  display:inline-block;
+  margin-top:40px;
+  padding:15px 35px;
+  border:1px solid #C6A75E;
+  color:#C6A75E;
+  text-decoration:none;
+  transition:.4s;
+}
+
+.btn:hover{
+  background:#C6A75E;
+  color:#0C1B2A;
+}
+
+/* ================= STORY ================= */
+
+.story{
+  display:flex;
+  gap:60px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.story img{
+  width:100%;
+  border-radius:10px;
+}
+
+.story div{flex:1}
+
+/* ================= PARALLAX ================= */
+
+.parallax{
+  height:60vh;
+  background:
+  linear-gradient(rgba(12,27,42,.6),rgba(12,27,42,.8)),
+  url('https://images.unsplash.com/photo-1493558103817-58b2924bce98') center/cover fixed no-repeat;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  text-align:center;
+}
+
+/* ================= EXPERIENCES ================= */
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  gap:40px;
+  margin-top:60px;
+}
+
+.card{
+  background:#11273A;
+  padding:50px;
+  border:1px solid rgba(198,167,94,.2);
+  transition:.4s;
+}
+
+.card:hover{
+  transform:translateY(-10px);
+  border-color:#C6A75E;
+}
+
+/* ================= SEA GALLERY ================= */
+
+.gallery{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:30px;
+  margin-top:60px;
+}
+
+.gallery img{
+  width:100%;
+  height:400px;
+  object-fit:cover;
+  border-radius:10px;
+  transition:.6s;
+}
+
+.gallery img:hover{
+  transform:scale(1.05);
+}
+
+/* ================= VILLAS ================= */
+
+.villas{
+  display:flex;
+  gap:60px;
+  align-items:center;
+  flex-wrap:wrap;
+}
+
+.villas img{width:100%;border-radius:10px}
+.villas div{flex:1}
+
+/* ================= MEMBERSHIP ================= */
+
+.membership-tier{
+  background:#11273A;
+  padding:60px;
+  border:1px solid rgba(198,167,94,.3);
+}
+
+/* ================= ACCESS FORM ================= */
+
+form{
+  max-width:700px;
+  margin:auto;
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+
+input,textarea{
+  padding:15px;
+  background:transparent;
+  border:1px solid #C6A75E;
+  color:#E8D8C3;
+}
+
+textarea{height:120px}
+
+button{
+  padding:15px;
+  background:transparent;
+  border:1px solid #C6A75E;
+  color:#C6A75E;
+  cursor:pointer;
+  transition:.4s;
+}
+
+button:hover{
+  background:#C6A75E;
+  color:#0C1B2A;
+}
+
+/* ================= FOOTER ================= */
+
+footer{
+  text-align:center;
+  padding:50px;
+  background:#0C1B2A;
+  font-size:14px;
+  color:#C6A75E;
+}
+
+/* ================= RESPONSIVE ================= */
+
+@media(max-width:768px){
+  .hero h1{font-size:42px}
+  section{padding:80px 8%}
+}
+
+</style>
 </head>
 <body>
 
-<nav>
-  <div class="nav-container">
-    <div class="nav-logo">GRAPESINO</div>
-    <div class="nav-links">
-      <a href="#">Home</a><a href="#fleet">Fleet</a><a href="#feedback">Feedback</a>
-    </div>
-  </div>
-</nav>
-
-<header>
+<!-- HERO -->
+<section class="hero">
   <div>
-    <div class="logo">GRAPESINO</div>
-    <div class="hero-search">
-        <input type="text" placeholder="QUERY VEHICLE DATABASE..." oninput="filterModels(this.value.toLowerCase())">
-    </div>
+    <h1 class="gold">The Private Island of Grapesino</h1>
+    <p>Beyond luxury… lies privacy.</p>
+    <a href="#access" class="btn">Request Private Access</a>
   </div>
-</header>
+</section>
 
-<div class="container">
-  <h2 id="fleet" style="font-family:'Orbitron'; text-align:center; margin-top:80px; letter-spacing:10px;">THE APEX FLEET</h2>
-  <div class="grid" id="mainGrid"></div>
-</div>
-
-<div id="portal">
-  <div class="portal-hero" id="p-hero-bg">
-    <div style="position: absolute; top: 40px; left: 8%; cursor: pointer;" onclick="closePortal()"><i class="fas fa-arrow-left"></i> EXIT LAB</div>
-    <div class="portal-hero-content">
-      <h1 id="p-name" style="font-family:'Orbitron';"></h1>
-      <div class="sync-status"><div class="sync-bar" id="syncBar"></div></div>
+<!-- STORY -->
+<section>
+  <div class="story">
+    <div>
+      <h2 class="gold">A Sanctuary Reserved for the Few</h2>
+      <p>
+        Surrounded by turquoise waters and untouched white sands,
+        the Private Island of Grapesino exists beyond the world’s noise.
+        Time slows. The horizon expands. Privacy becomes absolute.
+      </p>
     </div>
-  </div>
-
-  <div class="lab-content">
-    <div id="config-panel">
-        <div class="config-group">
-            <span class="group-label">EXTERNAL FINISH</span>
-            <div class="choice-grid">
-                <div class="choice-btn selected" onclick="toggleChoice(this)">Void Black</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Neon Chrome</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Matte Ghost</div>
-            </div>
-        </div>
-
-        <div class="config-group">
-            <span class="group-label">PERFORMANCE CORE</span>
-            <div class="choice-grid">
-                <div class="choice-btn selected" onclick="toggleChoice(this)">Standard Fusion</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Quantum Overclock</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Stealth Silent</div>
-            </div>
-        </div>
-
-        <div class="config-group">
-            <span class="group-label">DRIVING PREFERENCES</span>
-            <div class="choice-grid">
-                <div class="choice-btn selected" onclick="toggleChoice(this)">Neural-Sync (AI)</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Manual Drift Mode</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Eco-Cruising</div>
-            </div>
-        </div>
-
-        <div class="config-group">
-            <span class="group-label">ACCESSIBILITY</span>
-            <div class="choice-grid">
-                <div class="choice-btn selected" onclick="toggleChoice(this)">Voice Command</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Haptic Steering</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Auto-Entry Proximity</div>
-            </div>
-        </div>
-
-        <div class="config-group">
-            <span class="group-label">PURCHASING STORE / HUB</span>
-            <div class="choice-grid">
-                <div class="choice-btn selected" onclick="toggleChoice(this)">Apex Central Hub</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">Neo-Tokyo Distro</div>
-                <div class="choice-btn" onclick="toggleChoice(this)">London Underground</div>
-            </div>
-        </div>
-    </div>
-
-    <div class="summary-box">
-        <h3>CONFIG SUMMARY</h3>
-        <div class="price-total" id="p-price"></div>
-        <p style="font-size: 0.7rem; color: #555; margin-bottom: 20px;">Ready for deployment at selected store.</p>
-        <button onclick="alert('Config Synced')" style="width:100%; background:#fff; color:#000; border:none; padding:15px; border-radius:8px; font-family:'Orbitron'; font-weight:800; cursor:pointer;">CONFIRM & UPLINK</button>
-    </div>
-  </div>
-</div>
-
-<section class="feedback-section" id="feedback">
-  <div class="container">
-    <div style="background:#0a0a0a; padding:40px; border-radius:15px; border:1px solid var(--border); max-width:800px; margin:auto;">
-        <h2 style="font-family:'Orbitron'; letter-spacing:5px; text-align: center; margin-bottom: 30px;">USER FEEDBACK</h2>
-        <textarea rows="4" placeholder="TRANSMISSION DATA..." style="width:100%; background:#111; border:1px solid var(--border); padding:20px; color:#fff; border-radius:8px; outline:none; margin-bottom:20px;"></textarea>
-        <button onclick="alert('Sent')" style="background: #fff; color: #000; border: none; padding: 18px; width: 100%; font-family: 'Orbitron'; font-weight: 800; cursor: pointer; border-radius: 8px;">SUBMIT UPLINK</button>
+    <div>
+      <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
     </div>
   </div>
 </section>
 
-<footer>
-  <div class="social-icons">
-    <a href="#"><i class="fab fa-facebook-f"></i></a>
-    <a href="#"><i class="fab fa-instagram"></i></a>
-    <a href="#"><i class="fab fa-youtube"></i></a>
-    <a href="#"><i class="fab fa-twitter"></i></a>
+<!-- PARALLAX -->
+<section class="parallax">
+  <h2 class="gold">Every Sunset Ends in Gold</h2>
+</section>
+
+<!-- EXPERIENCES -->
+<section>
+  <h2 class="gold center">Experiences Curated for Visionaries</h2>
+  <div class="grid">
+    <div class="card">Private beachfront dining at sunset</div>
+    <div class="card">Personalized wellness rituals</div>
+    <div class="card">Champagne beneath coral skies</div>
+    <div class="card">Secluded lagoon swims</div>
+    <div class="card">Bespoke yacht excursions</div>
+    <div class="card">Golden-hour shoreline walks</div>
   </div>
-  <p style="text-align: center; font-size: 0.7rem; opacity: 0.3; font-family: 'Orbitron';">GRAPESINO CORP // 2026</p>
+</section>
+
+<!-- SEA GALLERY -->
+<section>
+  <h2 class="gold center">The Ocean Is Our Architecture</h2>
+  <div class="gallery">
+    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e">
+    <img src="https://images.unsplash.com/photo-1500375592092-40eb2168fd21">
+    <img src="https://images.unsplash.com/photo-1493558103817-58b2924bce98">
+    <img src="https://images.unsplash.com/photo-1501959915551-4e8b9690d5a7">
+  </div>
+</section>
+
+<!-- VILLAS -->
+<section>
+  <div class="villas">
+    <div>
+      <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
+    </div>
+    <div>
+      <h2 class="gold">Private Oceanfront Residences</h2>
+      <p>
+        Infinity pools merging with the horizon.
+        Handcrafted interiors in ivory, gold, and deep ocean blue.
+        Designed for discretion, engineered for serenity.
+      </p>
+    </div>
+  </div>
+</section>
+
+<!-- MEMBERSHIP -->
+<section>
+  <h2 class="gold center">Membership Is By Invitation Only</h2>
+  <div class="grid">
+    <div class="membership-tier">
+      <h3 class="gold">Founders Circle</h3>
+      <p>Permanent villa privileges and lifetime concierge service.</p>
+    </div>
+    <div class="membership-tier">
+      <h3 class="gold">Elite Escape</h3>
+      <p>Seasonal stays with private yacht privileges.</p>
+    </div>
+    <div class="membership-tier">
+      <h3 class="gold">Legacy Patron</h3>
+      <p>Confidential long-term partnership and global privileges.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ACCESS -->
+<section id="access">
+  <h2 class="gold center">Request Private Access</h2>
+  <form>
+    <input type="text" placeholder="Full Name" required>
+    <input type="email" placeholder="Email Address" required>
+    <input type="text" placeholder="Country of Residence">
+    <input type="number" placeholder="Number of Guests">
+    <textarea placeholder="Private Message"></textarea>
+    <button type="submit">Submit Confidential Inquiry</button>
+  </form>
+</section>
+
+<!-- FINAL -->
+<section class="parallax">
+  <h1 class="gold">Where Luxury Lives</h1>
+</section>
+
+<footer>
+© 2026 The Private Island of Grapesino. All Rights Reserved.
 </footer>
 
-<script>
-const data = [
-  { n: "LSGMAXI", c: "$77,000", i: "https://images.unsplash.com/photo-1708019868640-864307aff6b9?w=1200" },
-  { n: "GFANCY", c: "$45,000", i: "https://plus.unsplash.com/premium_photo-1737597230788-21c5a56d5d8a?w=1200" },
-  { n: "DIOMANDLG", c: "$125,000", i: "https://images.unsplash.com/photo-1759493464674-aadfffcd786a?w=1200" },
-  { n: "GRAPE-4x4", c: "$92,000", i: "https://images.unsplash.com/photo-1764053000942-80ec3553fa78?w=1200"},
-  { n: "SHADOW-X", c: "$150,000", i: "https://media.istockphoto.com/id/156784761/photo/car-race.jpg?s=1024" },
-  { n: "LocalG", c: "$19,500", i: "https://images.unsplash.com/photo-1544896478-d5b709d413c5?w=1200" }
-];
-
-const mainGrid = document.getElementById('mainGrid');
-data.forEach((car, i) => {
-  mainGrid.innerHTML += `
-    <div class="card" onclick="openPortal(${i})">
-      <img src="${car.i}">
-      <div class="card-meta">
-        <h3 style="font-family:'Orbitron';">${car.n}</h3>
-        <p style="font-size:0.8rem; opacity:0.5;">${car.c}</p>
-      </div>
-    </div>`;
-});
-
-function openPortal(i) {
-  const c = data[i];
-  document.getElementById('p-name').innerText = c.n;
-  document.getElementById('p-price').innerText = c.c;
-  document.getElementById('p-hero-bg').style.backgroundImage = `url('${c.i}')`;
-  document.getElementById('portal').style.display = 'block';
-  document.body.style.overflow = 'hidden';
-  updateSync();
-}
-
-function toggleChoice(btn) {
-    const parent = btn.parentElement;
-    parent.querySelectorAll('.choice-btn').forEach(b => b.classList.remove('selected'));
-    btn.classList.add('selected');
-    updateSync();
-}
-
-function updateSync() {
-    const totalGroups = document.querySelectorAll('.config-group').length;
-    const selected = document.querySelectorAll('.choice-btn.selected').length;
-    document.getElementById('syncBar').style.width = (selected / totalGroups) * 100 + "%";
-}
-
-function closePortal() {
-  document.getElementById('portal').style.display = 'none';
-  document.body.style.overflow = 'auto';
-}
-
-function filterModels(q) {
-  document.querySelectorAll('.card').forEach(card => {
-    const name = card.querySelector('h3').innerText.toLowerCase();
-    card.style.display = name.includes(q) ? '' : 'none';
-  });
-}
-</script>
 </body>
 </html>
