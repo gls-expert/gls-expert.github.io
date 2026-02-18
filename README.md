@@ -19,6 +19,7 @@ body{
   color:#E8D8C3;
   overflow-x:hidden;
   line-height:1.8;
+  padding-top:80px;
 }
 
 h1,h2,h3{
@@ -33,6 +34,50 @@ section{
 
 .gold{color:#C6A75E}
 .center{text-align:center}
+
+/* ================= HEADER ================= */
+
+.header{
+  position:fixed;
+  top:0;
+  width:100%;
+  padding:20px 10%;
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:rgba(12,27,42,.85);
+  backdrop-filter:blur(10px);
+  z-index:1000;
+}
+
+.logo{
+  font-family:'Playfair Display',serif;
+  font-size:22px;
+  letter-spacing:2px;
+}
+
+nav a{
+  color:#E8D8C3;
+  text-decoration:none;
+  margin-left:30px;
+  font-size:14px;
+  letter-spacing:1px;
+  transition:.3s;
+}
+
+nav a:hover{
+  color:#C6A75E;
+}
+
+.nav-btn{
+  border:1px solid #C6A75E;
+  padding:8px 18px;
+}
+
+.nav-btn:hover{
+  background:#C6A75E;
+  color:#0C1B2A;
+}
 
 /* ================= HERO ================= */
 
@@ -217,6 +262,18 @@ footer{
 </head>
 <body>
 
+<!-- HEADER -->
+<header class="header">
+  <div class="logo gold">Grapesino</div>
+  <nav>
+    <a href="#story">Sanctuary</a>
+    <a href="#experiences">Experiences</a>
+    <a href="#villas">Residences</a>
+    <a href="#membership">Membership</a>
+    <a href="#access" class="nav-btn">Private Access</a>
+  </nav>
+</header>
+
 <!-- HERO -->
 <section class="hero">
   <div>
@@ -227,7 +284,7 @@ footer{
 </section>
 
 <!-- STORY -->
-<section>
+<section id="story">
   <div class="story">
     <div>
       <h2 class="gold">A Sanctuary Reserved for the Few</h2>
@@ -249,7 +306,7 @@ footer{
 </section>
 
 <!-- EXPERIENCES -->
-<section>
+<section id="experiences">
   <h2 class="gold center">Experiences Curated for Visionaries</h2>
   <div class="grid">
     <div class="card">Private beachfront dining at sunset</div>
@@ -273,7 +330,7 @@ footer{
 </section>
 
 <!-- VILLAS -->
-<section>
+<section id="villas">
   <div class="villas">
     <div>
       <img src="https://images.unsplash.com/photo-1505691938895-1758d7feb511">
@@ -290,7 +347,7 @@ footer{
 </section>
 
 <!-- MEMBERSHIP -->
-<section>
+<section id="membership">
   <h2 class="gold center">Membership Is By Invitation Only</h2>
   <div class="grid">
     <div class="membership-tier">
